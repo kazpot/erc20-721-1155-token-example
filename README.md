@@ -22,7 +22,7 @@ PRIVATE_KEY={private key in hex}
 $ yarn compile
 ```
 
-## Deploy to rinkeby testnet
+## Deploy to goerli testnet
 
 ```
 // erc20
