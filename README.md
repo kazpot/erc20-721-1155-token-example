@@ -1,7 +1,7 @@
 # ERC20, ERC721, ERC1155 example
 
-ERC20, ERC721, ERC1155 example contracts
-Deployment to goerli testnet with hardhat
+- ERC20, ERC721, ERC1155 example contracts
+- Deployment to goerli testnet with hardhat
 
 ## Install
 
