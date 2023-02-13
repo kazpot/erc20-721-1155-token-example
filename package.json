@@ -1,13 +1,16 @@
 {
-  "name": "erc1155-contract",
+  "name": "erc20-erc721-erc1155-contract",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "compile": "npx hardhat compile",
-    "deploy:erc20": "npx hardhat run scripts/deploy-erc20.ts --network goerli",
-    "deploy:erc721": "npx hardhat run scripts/deploy-erc721.ts --network goerli",
-    "deploy:erc1155": "npx hardhat run scripts/deploy-erc1155.ts --network goerli",
+    "deploy:eth:goerli:erc20": "npx hardhat run scripts/deploy-erc20.ts --network goerli",
+    "deploy:eth:goerli:erc721": "npx hardhat run scripts/deploy-erc721.ts --network goerli",
+    "deploy:eth:goerli:erc1155": "npx hardhat run scripts/deploy-erc1155.ts --network goerli",
+    "deploy:polygon:mumbai:erc20": "npx hardhat run scripts/deploy-erc20.ts --network mumbai",
+    "deploy:polygon:mumbai:erc721": "npx hardhat run scripts/deploy-erc721.ts --network mumbai",
+    "deploy:polygon:mumbai:erc1155": "npx hardhat run scripts/deploy-erc1155.ts --network mumbai",
     "test": "npx hardhat test"
   },
   "keywords": [],
