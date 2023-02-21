@@ -17,6 +17,12 @@ POLYGON_MUMBAI_URL={rpc url for polygon mumbai}
 PRIVATE_KEY={private key in hex}
 ```
 
+## Install packages
+
+```
+$ yarn
+```
+
 ## Compile smart contracts
 
 ```
