@@ -12,7 +12,8 @@ $ npm install -g yarn
 ## Create .env file
 
 ```
-API_URL={rpc url}
+ETH_GOERLI_URL={rpc url for ethereum goerli}
+POLYGON_MUMBAI_URL={rpc url for polygon mumbai}
 PRIVATE_KEY={private key in hex}
 ```
 
@@ -26,13 +27,13 @@ $ yarn compile
 
 ```
 // erc20
-$ yarn deploy:erc20
+$ yarn deploy:eth:goerli:erc20
 
 // erc721
-$ yarn deploy:erc721
+$ yarn deploy:eth:goerli:erc721
 
 // erc1155
-$ yarn deploy:erc20
+$ yarn deploy:eth:goerli:erc1155
 ```
 
 ## Test
