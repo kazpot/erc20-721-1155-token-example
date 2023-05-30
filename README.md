@@ -14,6 +14,7 @@ $ npm install -g yarn
 ```
 ETH_GOERLI_URL={rpc url for ethereum goerli}
 POLYGON_MUMBAI_URL={rpc url for polygon mumbai}
+OASIS_EMERALD_URL={rpc url for oasis emerald}
 PRIVATE_KEY={private key in hex}
 ```
 
