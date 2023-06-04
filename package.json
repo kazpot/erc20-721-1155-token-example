@@ -14,6 +14,9 @@
     "deploy:polygon:mumbai:erc20": "npx hardhat run scripts/deploy-erc20.ts --network mumbai",
     "deploy:polygon:mumbai:erc721": "npx hardhat run scripts/deploy-erc721.ts --network mumbai",
     "deploy:polygon:mumbai:erc1155": "npx hardhat run scripts/deploy-erc1155.ts --network mumbai",
+    "deploy:oasis:emerald:erc20": "npx hardhat run scripts/deploy-erc20.ts --network emerald",
+    "deploy:oasis:emerald:erc721": "npx hardhat run scripts/deploy-erc721.ts --network emerald",
+    "deploy::oasis:emerald:erc1155": "npx hardhat run scripts/deploy-erc1155.ts --network emerald",
     "test": "npx hardhat test"
   },
   "keywords": [],
