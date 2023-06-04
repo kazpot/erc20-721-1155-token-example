@@ -1,5 +1,4 @@
 require("dotenv").config();
-import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
 const {
@@ -9,28 +8,47 @@ const {
   OASIS_EMERALD_URL,
   PRIVATE_KEY,
 } = process.env;
-const config: HardhatUserConfig = {
-  solidity: "0.8.17",
-  defaultNetwork: "goerli",
+
+module.exports = {
+  defaultNetwork: "hardhat",
   networks: {
-    hardhat: {},
+    local: {
+      chainId: 31337,
+      url: "http://127.0.0.1:8545/",
+      account: PRIVATE_KEY,
+    },
     goerli: {
       url: ETH_GOERLI_URL,
-      accounts: [`0x${PRIVATE_KEY}`],
+      accounts: [PRIVATE_KEY],
+      gas: 2100000,
+      gasPrice: 8000000000,
     },
     sepolia: {
       url: ETH_SEPOLIA_URL,
-      accounts: [`0x${PRIVATE_KEY}`],
+      accounts: [PRIVATE_KEY],
+      gas: 2100000,
+      gasPrice: 8000000000,
     },
     mumbai: {
       url: POLYGON_MUMBAI_URL,
-      accounts: [`0x${PRIVATE_KEY}`],
+      accounts: [PRIVATE_KEY],
+      gas: 2100000,
+      gasPrice: 8000000000,
     },
     emerald: {
       url: OASIS_EMERALD_URL,
-      accounts: [`0x${PRIVATE_KEY}`],
+      accounts: [PRIVATE_KEY],
+      gas: 2100000,
+      gasPrice: 8000000000,
+    },
+  },
+  solidity: {
+    version: "0.8.17",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200,
+      },
     },
   },
 };
-
-export default config;
