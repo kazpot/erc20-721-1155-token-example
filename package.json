@@ -17,6 +17,9 @@
     "deploy:oasis:emerald:erc20": "npx hardhat run scripts/deploy-erc20.ts --network emerald",
     "deploy:oasis:emerald:erc721": "npx hardhat run scripts/deploy-erc721.ts --network emerald",
     "deploy::oasis:emerald:erc1155": "npx hardhat run scripts/deploy-erc1155.ts --network emerald",
+    "deploy:ava:local:erc20": "npx hardhat run scripts/deploy-erc20.ts --network avalocal",
+    "deploy:ava:local:erc721": "npx hardhat run scripts/deploy-erc721.ts --network avalocal",
+    "deploy::ava:local:erc1155": "npx hardhat run scripts/deploy-erc1155.ts --network avalocal",
     "test": "npx hardhat test"
   },
   "keywords": [],

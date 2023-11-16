@@ -6,6 +6,7 @@ const {
   ETH_SEPOLIA_URL,
   POLYGON_MUMBAI_URL,
   OASIS_EMERALD_URL,
+  AVA_LOCAL_URL,
   PRIVATE_KEY,
 } = process.env;
 
@@ -40,6 +41,12 @@ module.exports = {
       accounts: [PRIVATE_KEY],
       gas: 2100000,
       gasPrice: 8000000000,
+    },
+    avalocal: {
+      url: AVA_LOCAL_URL,
+      accounts: [PRIVATE_KEY],
+      gas: 2100000,
+      gasPrice: 25000000000,
     },
   },
   solidity: {
