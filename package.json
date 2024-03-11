@@ -20,6 +20,9 @@
     "deploy:ava:local:erc20": "npx hardhat run scripts/deploy-erc20.ts --network avalocal",
     "deploy:ava:local:erc721": "npx hardhat run scripts/deploy-erc721.ts --network avalocal",
     "deploy::ava:local:erc1155": "npx hardhat run scripts/deploy-erc1155.ts --network avalocal",
+    "deploy:ava:lt0:erc20": "npx hardhat run scripts/deploy-erc20.ts --network avalt0",
+    "deploy:ava:lt0:erc721": "npx hardhat run scripts/deploy-erc721.ts --network avalt0",
+    "deploy::ava:lt0:erc1155": "npx hardhat run scripts/deploy-erc1155.ts --network avalt0",
     "test": "npx hardhat test"
   },
   "keywords": [],
