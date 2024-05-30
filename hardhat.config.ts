@@ -1,6 +1,5 @@
 require("dotenv").config();
 import "@nomicfoundation/hardhat-toolbox";
-import "@nomicfoundation/hardhat-verify";
 
 const {
   ETH_GOERLI_URL,
