@@ -1,15 +1,16 @@
 require("dotenv").config();
 import "@nomicfoundation/hardhat-toolbox";
+import "@nomicfoundation/hardhat-verify";
 
 const {
   ETH_GOERLI_URL,
   ETH_SEPOLIA_URL,
   POLYGON_MUMBAI_URL,
   OASIS_EMERALD_URL,
-  AVA_LOCAL_URL,
-  AVA_LT0_URL,
+  FUJI_URL,
+  FUJI_LT0_URL,
   PRIVATE_KEY,
-  AVA_PRIVATE_KEY,
+  FUJI_PRIVATE_KEY,
 } = process.env;
 
 module.exports = {
@@ -44,15 +45,15 @@ module.exports = {
       gas: 2100000,
       gasPrice: 8000000000,
     },
-    avalocal: {
-      url: AVA_LOCAL_URL,
-      accounts: [AVA_PRIVATE_KEY],
+    fuji: {
+      url: FUJI_URL,
+      accounts: [FUJI_PRIVATE_KEY],
       gas: 2100000,
       gasPrice: 225000000000,
     },
-    avalt0: {
-      url: AVA_LT0_URL,
-      accounts: [AVA_PRIVATE_KEY],
+    lt0: {
+      url: FUJI_LT0_URL,
+      accounts: [FUJI_PRIVATE_KEY],
       gas: 2100000,
       gasPrice: 225000000000,
     },
